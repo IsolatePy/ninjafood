@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <title>Sign Up</title>
+  </head>
+  <body class="text-gray-500 font-body">
+    <div class="grid md:grid-cols-3">
+      <!--Content Wrapper-->
+      <div class="md:col-span-1 md:flex md:justify-end">
+        <nav class="text-right">
+          <div class="flex justify-between items-center">
+            <h1 class="font-bold uppercase p-4">
+              <a href="/" class="hover:text-gray-700">Food Ninja</a>
+            </h1>
+            <div class="px-4 cursor-pointer md:hidden" id="burger">
+              <svg
+                class="w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+          </div>
+          <ul class="text-sm mt-6 hidden md:block" id="menu">
+            <li class="text-gray-700 font-bold py-1">
+              <a href="./index.html" class="px-4 flex justify-end"
+                ><span>Home</span>
+                <svg
+                  class="w-5 ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="py-1">
+              <a href="./about.html" class="px-4 flex justify-end"
+                ><span>About</span>
+                <svg
+                  class="w-5 ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="py-1">
+              <a href="./contact.html" class="px-4 flex justify-end"
+                ><span>Contact</span>
+                <svg
+                  class="w-5 ml-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <main class="px-16 py-16 bg-gray-100 md:col-span-2">
+        <div class="flex justify-center md:justify-end">
+          <a
+            href="./login.html"
+            class="text-primary btn border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
+            >Login</a
+          >
+          <a
+            href="./signup.html"
+            class="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
+            >Sign Up</a
+          >
+        </div>
+        <header>
+          <h2 class="text-gray-700 text-6xl font-semibold">
+            Sign Up to Website
+          </h2>
+        </header>
+        <div>
+          <div class="font-bold mt-12 pb-2 border-b border-gray-200"></div>
+          <div class="mt-8">
+            <form class="w-full max-w-lg">
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-first-name"
+                  >
+                    First Name
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
+                    id="grid-first-name"
+                    type="text"
+                    placeholder="Jane"
+                  />
+                </div>
+                <div class="w-full md:w-1/2 px-3">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-last-name"
+                  >
+                    Last Name
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-last-name"
+                    type="text"
+                    placeholder="Doe"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-6">
+                <div class="w-full px-3">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-password"
+                  >
+                    Password
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-password"
+                    type="password"
+                    placeholder="******************"
+                  />
+                </div>
+              </div>
+              <div class="flex flex-wrap -mx-3 mb-2">
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-city"
+                  >
+                    City
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-city"
+                    type="text"
+                    placeholder="Karbala"
+                  />
+                </div>
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-state"
+                  >
+                    State
+                  </label>
+                  <div class="relative">
+                    <select
+                      class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                      id="grid-state"
+                    >
+                      <option>-</option>
+                      <option>Karbala</option>
+                      <option>Baghdad</option>
+                      <option>Al Diwaniyah</option>
+                    </select>
+                    <div
+                      class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700"
+                    >
+                      <svg
+                        class="fill-current h-4 w-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="w-full md:w-1/3 px-3 mb-6 md:mb-0">
+                  <label
+                    class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2"
+                    for="grid-zip"
+                  >
+                    Zip
+                  </label>
+                  <input
+                    class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
+                    id="grid-zip"
+                    type="text"
+                    placeholder="90210"
+                  />
+                </div>
+                <div class="flex items-center justify-between m-4">
+                  <button
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    type="button"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="font-bold mt-12 pb-2 border-b border-gray-200"></div>
+        <div class="mt-8"></div>
+        <div class="flex justify-center">
+          <p class="text-center text-gray-500 text-xs">
+            &copy;2020 Acme Corp. All rights reserved.
+          </p>
+        </div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
